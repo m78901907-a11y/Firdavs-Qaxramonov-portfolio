@@ -422,3 +422,43 @@ html, body {
     border-radius: 22% !important; /* Bir oz kichikroq rasmga 22% daxshatli chiroyli tushadi */
     object-fit: cover;
 }
+
+/* 📱 Telefonlar va planshetlar uchun maxsus kodlar */
+@media (max-width: 768px) {
+    
+    /* Sayt tepadagi qismini (header) tikka holatga keltiradi */
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    /* Menyularni yopishib qolmasligi uchun joy tashlaymiz */
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Agar asosiy qismda (Hero) rasm va matn yonma-yon bo'lsa, ularni ustma-ust qiladi */
+    .hero-container {
+        flex-direction: column-reverse; /* Rasmni tepaga, matnni pastga qo'yadi */
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    /* Tepadagi logongni telefonga moslab bir oz kichraytiramiz */
+    .logo {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+
+    /* Asosiy katta sarlavha matnini kichraytiramiz, telefonga sig'ishi uchun */
+    h1 {
+        font-size: 2rem !important;
+        line-height: 1.3;
+    }
+}
