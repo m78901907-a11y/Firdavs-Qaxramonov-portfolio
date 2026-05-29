@@ -414,3 +414,11 @@ html, body {
     box-shadow: 0 0 15px #00f2fe;
     transform: translateY(-3px);
 }
+
+/* Agarda logotip html ichida <img> tegi bilan yozilgan bo'lsa */
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 22% !important; /* Bir oz kichikroq rasmga 22% daxshatli chiroyli tushadi */
+    object-fit: cover;
+}
